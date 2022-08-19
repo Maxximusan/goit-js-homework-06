@@ -12,3 +12,20 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const ulEl = document.querySelector('.gallery');
+// вариант №1
+// const array = [];
+// for (let el of images) {
+//   const ourData = ulEl.insertAdjacentHTML("beforeend", `<li><img src= '${el.url}' alt= '${el.alt}'</li>`);
+//   array.push(ourData)
+// }
+// console.log(ulEl)
+
+
+// вариант №2
+images.map(elem => ulEl.insertAdjacentHTML("beforeend", `<li><img src= '${elem.url}' alt= '${elem.alt}'</li>`))
+
+console.log(ulEl)
+
+
