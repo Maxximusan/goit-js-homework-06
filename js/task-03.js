@@ -24,7 +24,7 @@ const ulEl = document.querySelector('.gallery');
 
 
 // вариант №2
-images.map(elem => ulEl.insertAdjacentHTML("beforeend", `<li><img src= '${elem.url}' alt= '${elem.alt}'</li>`))
+images.map(elem => ulEl.insertAdjacentHTML("beforeend", `<li><img src= '${elem.url}' alt= '${elem.alt}'</li>`)).join('');
 
 console.log(ulEl)
 
