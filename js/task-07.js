@@ -10,3 +10,5 @@ refs.input.addEventListener('input', onBlur);
 function onBlur(event) {
     refs.span.style.fontSize = event.currentTarget.value + 'px';
 }
+
+// const onBlur = () => (refs.span.style.fontSize = `${refs.input.value}px`);

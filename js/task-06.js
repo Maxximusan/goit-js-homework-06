@@ -17,6 +17,6 @@ inputEl.addEventListener('blur', onInputBlur);
 // }
 
 function onInputBlur(event) {
-    event.currentTarget.value.length <= 6 ? this.classList.add('valid') : this.classList.add('invalid')
+    event.currentTarget.value.length <= inputEl.dataset.length ? this.classList.add('valid') : this.classList.add('invalid')
     console.log(event.currentTarget)
 };
