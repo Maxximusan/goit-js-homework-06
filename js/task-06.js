@@ -19,6 +19,8 @@ inputEl.addEventListener('focus', reset)
 
 function onInputBlur(event) {
 
+    if (event.currentTarget.value === '') return;
+
     event.currentTarget.value.length >= inputEl.dataset.length
         ? this.classList.add('invalid')
         : this.classList.add('valid')
