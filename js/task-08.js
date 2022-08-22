@@ -19,8 +19,9 @@ function onFormSubmit(event) {
             return alert('Form is not completed');
         }
 
-        console.log('onFormSubmit --> name', name);
-        console.log('onFormSubmit --> value', value);
+        // console.log('onFormSubmit --> name', name);
+        // console.log('onFormSubmit --> value', value);
+        console.log({ name, value });
 
         event.currentTarget.reset();
     });

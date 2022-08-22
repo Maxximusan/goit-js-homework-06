@@ -19,12 +19,17 @@ const ulEl = document.querySelector('.gallery');
 // for (let el of images) {
 //   const ourData = ulEl.insertAdjacentHTML("beforeend", `<li><img src= '${el.url}' alt= '${el.alt}'</li>`);
 //   array.push(ourData)
+//   console.log(ulEl)
 // }
-// console.log(ulEl)
+
 
 
 // вариант №2
-images.map(elem => ulEl.insertAdjacentHTML("beforeend", `<li><img src= '${elem.url}' alt= '${elem.alt}'</li>`)).join('');
+const markup = images
+  .map(elem => `<li><img src= '${elem.url}' alt= '${elem.alt}'</li>`)
+  .join('');
+
+ulEl.insertAdjacentHTML('afterbegin', markup)
 
 console.log(ulEl)
 
